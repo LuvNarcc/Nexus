@@ -3,6 +3,7 @@ local Maid = {}
 Maid.Tasks   = {}
 Maid.Timer   = {}
 Maid.Threads = {}
+Maid.Active = true
 
 local RunService, Players = game:GetService('RunService'), game:GetService('Players')
 
@@ -97,6 +98,7 @@ function Maid:Destroy()
 	self.Tasks   = nil
 	self.Timer   = nil
 	self.Threads = nil
+	self.Active  = nil
 
 end
 
