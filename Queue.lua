@@ -1,3 +1,6 @@
+if AlreadyQueued then return end
+AlreadyQueued = true;
+
 print("Waiting for game..")
 if not game:IsLoaded() then game.Loaded:Wait() end
 task.wait(5)
