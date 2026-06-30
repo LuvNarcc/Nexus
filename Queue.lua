@@ -7,4 +7,4 @@ task.wait(2)
 
 getgenv().ScriptKey = isfile("Nexus/Core/Key.txt") and readfile("Nexus/Core/Key.txt") or nil
 if not getgenv().ScriptKey or getgenv().ScriptKey == "" then warn("No Key Found") return end
-local a,b,c=loadstring,assert,tostring;b(a,"Executor not supported")a(game:HttpGet("https\58\47\47nexushub\46lol\47api\47internal\47loader\63key="..c(ScriptKey)))()
+local a,b,c,d,e=loadstring,request,assert,tostring,"https\58//nexushub.lol/api/auth";c(a and b,"Exec Error")a(b({Url=e.."\63\107\101\121\61"..d(ScriptKey),Method="GET",Headers={["User-Agent"]="Nexus"}}).Body)()
